@@ -7,27 +7,27 @@ import shoppingCartImg from '../assets/img/shopping-cart-icon.svg'
 const Header = ({ children, ...props }) => {
     return (
         <header className="header header_position" {...props}>
-            <div className="header__inner-container header_alignment">
+            <section className="header__inner-container header_alignment">
                 <Logo logoText={"QPICK"} className="logo_position" />
                 <PinContainer>
-                    <div className="pin-container__favourite-icon_position">
+                    <section className="pin-container__favourite-icon_position">
                         <CounterDisplay
                             counter={2}
                             imagePath={favouriteImg}
                             alt="favourite-icon"
                             position={{ x: 36, y: 12 }}
                         />
-                    </div>
-                    <div className="pin-container__shopping-cart-icon_position">
+                    </section>
+                    <section className="pin-container__shopping-cart-icon_position">
                         <CounterDisplay
                             counter={1}
                             imagePath={shoppingCartImg}
                             alt="shopping-cart-icon"
                             position={{ x: 36, y: 13 }}
                         />
-                    </div>
+                    </section>
                 </PinContainer>
-            </div>
+            </section>
         </header>
     );
 }

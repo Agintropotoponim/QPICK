@@ -1,4 +1,4 @@
-.counter-display{
+.counter-display {
     position: relative;
     padding: 20px;
     gap: 10px;
@@ -6,7 +6,7 @@
     height: 60px;    
 }
 
-.counter-display__counter{
+.counter-display__counter {
     background: url("../../../assets/img/counter-icon.svg");
     position: absolute;
     width: 17.4px;
@@ -16,10 +16,15 @@
     align-items: center;
 }
 
-.counter-display__counter_text{
+.counter-display__counter_text {
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 15px;
     line-height: 18.29px;
     color: rgba(255, 255, 255, 1);
+}
+
+.counter__section {
+    cursor: pointer;
+    width: fit-content;
 }
