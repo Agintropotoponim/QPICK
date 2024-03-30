@@ -1,3 +1,65 @@
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Montserrat'),
+	    url('./assets/fonts/montserrat/Montserrat-Regular.ttf') format('truetype'),
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Montserrat'),
+	    url('./assets/fonts/montserrat/Montserrat-Bold.ttf') format('truetype'),
+}
+
 .App {
-  text-align: center;
+
+}
+
+.header{
+    background: #EAEAEA;
+    height: 60px;
+    width: 1135px;
+}
+
+.header_alignment{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__inner-container{
+    width: 1109.89px;
+}
+
+.header_position{
+    margin-right: 67px;
+}
+
+.logo_position{
+    margin-left: px;
+}
+
+.product-catalog{
+    width: 1440px;
+    height: 1629px;
+    display: flex;
+    justify-content: center;
+    background: rgba(234, 234, 234, 1);
+}
+
+.pin-container{
+    display: flex;
+    margin-right: -12.8px ;
+}
+
+.pin-container__favourite-icon_position{
+
+}
+
+.pin-container__shopping-cart-icon_position{
+    margin-left: 5px;
 }
