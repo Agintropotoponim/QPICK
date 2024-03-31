@@ -30,9 +30,6 @@ const Basket = () => {
     return (
         <main className="basket-page">
             <div>
-                <div className="basket-header">
-                    <Header />
-                </div>
                 <section className="basket">
                     <p className="basket__title">Корзина</p>
                     <div className="basket-list">
@@ -63,9 +60,6 @@ const Basket = () => {
                         }
                     </div>
                 </section>
-            </div>
-            <div className="basket-footer">
-                <Footer />
             </div>
         </main>
     );

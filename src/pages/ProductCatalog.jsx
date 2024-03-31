@@ -27,7 +27,7 @@ const ProductCatalog = () => {
             <div className="product-catalog">
 
                 <section>
-                    <Header />
+
                     <div className="product-list">
                         <section className="product-list__section">
                             <section>
@@ -40,9 +40,7 @@ const ProductCatalog = () => {
                     </div>
                 </section>
             </div>
-            <section>
-                <Footer />
-            </section>
+
         </section>
     );
 }

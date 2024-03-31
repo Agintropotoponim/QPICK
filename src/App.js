@@ -5,6 +5,8 @@ import AppRouter from './components/AppRouter';
 import { LangContext } from './context/langContext';
 import { langList } from './langList';
 import { BasketContext } from './context/BasketContext';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -21,8 +23,13 @@ function App() {
                     basket,
                     setBasket
                 }}>
+
                     <BrowserRouter>
+                        <Header />
                         <AppRouter />
+                        <section className='footer_alignment'>
+                            <Footer />
+                        </section>
                     </BrowserRouter>
                 </BasketContext.Provider>
             </LangContext.Provider>
