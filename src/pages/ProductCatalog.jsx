@@ -1,5 +1,7 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ProductList from "../components/UI/ProductList/ProductList";
+import '../styles/Products.css'
 import { products } from "../data";
 
 
@@ -17,6 +19,7 @@ const ProductCatalog = () => {
                     </section>
                 </section>
             </div>
+            <Footer />
 
         </div>
     );

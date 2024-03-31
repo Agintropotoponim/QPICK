@@ -1,0 +1,30 @@
+.list {
+    display: flex;
+}
+
+.list__section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.list_text {
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(16, 16, 16, 1);
+}
+
+.list_text:hover {
+    color: rgba(66, 66, 66, 1);
+}
+
+.lang_selected {
+    color: rgba(255, 165, 66, 1);
+}
+
+.lang_selected:hover {
+    color: rgb(233, 153, 67);
+}

@@ -88,6 +88,7 @@ export const products = [
         rate: 4.7,
         wired: false
     },
+
 ]
 
 

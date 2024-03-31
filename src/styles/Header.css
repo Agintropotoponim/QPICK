@@ -1,0 +1,35 @@
+.header {
+    background: #EAEAEA;
+    height: 60px;
+}
+
+.header_alignment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__inner-container {
+    width: 1109.89px;
+
+}
+
+.header_position {
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo_position {}
+
+.pin-container {
+    display: flex;
+    margin-right: -12.8px ;
+}
+
+.pin-container__favourite-icon_position {}
+
+.pin-container__shopping-cart-icon_position {
+    margin-left: 5px;
+}

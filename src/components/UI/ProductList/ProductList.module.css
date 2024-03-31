@@ -10,13 +10,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex: 1 1 auto;
     width: 100%;
 }
 
 .list {
     width: 1110px;
-    min-height: 888.65px;
+    
 }
 
 .section_alignment{

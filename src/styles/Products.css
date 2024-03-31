@@ -1,0 +1,32 @@
+
+.product-catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1440px;
+    min-height: 1629px;
+    background: rgba(234, 234, 234, 1);
+}
+
+.product-list {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+    padding-left: 33px;
+
+}
+
+.product-list__section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1110px;
+
+}
+
+.product-list_margin-top {
+    margin-top: 15px;
+    padding-top: 15px;
+}

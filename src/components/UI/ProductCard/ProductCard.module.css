@@ -61,6 +61,10 @@
     cursor: pointer;
 }
 
+.product__buy-button:hover {
+    color: rgba(60, 60, 60, 1);
+}
+
 .product__price-container {
     display: flex;
     flex-direction: column;
