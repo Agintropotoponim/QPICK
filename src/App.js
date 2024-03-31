@@ -1,22 +1,32 @@
 import { useState } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import ProductCatalog from './pages/ProductCatalog';
+import AppRouter from './components/AppRouter';
 import { LangContext } from './context/langContext';
 import { langList } from './langList';
+import { BasketContext } from './context/BasketContext';
 
 function App() {
 
-    const [selectedLang, setSelectedLang] = useState(langList[0])
+    const [selectedLang, setSelectedLang] = useState(langList[0]);
+    const [basket, setBasket] = useState([]);
 
     return (
-        <LangContext.Provider value={{
-            selectedLang,
-            setSelectedLang
-        }}>
-            <div className="App">
-                <ProductCatalog />
-            </div>
-        </LangContext.Provider>
+        <div className="App">
+            <LangContext.Provider value={{
+                selectedLang,
+                setSelectedLang
+            }}>
+                <BasketContext.Provider value={{
+                    basket,
+                    setBasket
+                }}>
+                    <BrowserRouter>
+                        <AppRouter />
+                    </BrowserRouter>
+                </BasketContext.Provider>
+            </LangContext.Provider>
+        </div >
     );
 }
 

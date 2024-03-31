@@ -11,6 +11,7 @@ const LangList = ({ langList, selectedLang, setSelectedLang }) => {
                     langList?.map((lang) => {
                         return (
                             <span
+                                key={lang}
                                 className={
                                     selectedLang === lang
                                         ? [classes['lang_selected'], classes['list_text']].join(" ")

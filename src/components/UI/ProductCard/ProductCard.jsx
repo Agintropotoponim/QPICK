@@ -1,7 +1,7 @@
 import classes from './ProductCard.module.css'
 import rateIcon from '../../../assets/img/rate-icon.svg'
 
-const ProductCard = ({ product, ...props }) => {
+const ProductCard = ({ product, addToBasket, chooseProduct, ...props }) => {
     return (
         <main className={classes['product']} {...props}>
 
@@ -11,7 +11,7 @@ const ProductCard = ({ product, ...props }) => {
                     classes['product_flex-center'],
                 ].join(" ")}
             >
-                <img src={product.imgPath} alt={product.name} />
+                <img src={product.imgPath} alt={product.name} onClick={() => chooseProduct(product)} />
             </section>
 
             <article className={classes['product__info']}>
@@ -21,7 +21,7 @@ const ProductCard = ({ product, ...props }) => {
                         classes['product__left-section'],
                     ].join(" ")}
                 >
-                    <p className={classes['product_text']}>
+                    <p className={[classes['product_text'], classes['product-name']].join(' ')} onClick={() => chooseProduct(product)}>
                         {product.name}
                     </p>
 
@@ -64,7 +64,9 @@ const ProductCard = ({ product, ...props }) => {
                     <div className={[
                         classes['product_text'],
                         classes['product__buy-button'],
-                    ].join(" ")}>
+                    ].join(" ")}
+                        onClick={() => addToBasket(product)}
+                    >
                         Купить
                     </div>
 

@@ -1,0 +1,22 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background: rgba(0,0,0,0.5);
+}
+
+.content {
+    border-radius: 15px;
+    background: white;
+    padding: 15px;
+    min-width: 200px;
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

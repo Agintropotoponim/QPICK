@@ -4,6 +4,7 @@
     font-size: 17px;
     line-height: 20.72px;
     color: rgba(28, 28, 39, 1);
+    cursor: pointer;
 }
 
 .product-rate {
@@ -30,6 +31,7 @@
 
 .product__image {
     height: 270px;
+    cursor: pointer;
 }
 
 .product_flex {

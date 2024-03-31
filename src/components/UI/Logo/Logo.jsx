@@ -1,8 +1,8 @@
 import classes from './Logo.module.css'
 
-const Logo = ({ logoText, ...props }) => {
+const Logo = ({ logoText, onClick, ...props }) => {
     return (
-        <div {...props}>
+        <div onClick={onClick} {...props}>
             <p className={classes['logo_text']} >
                 {logoText}
             </p>
